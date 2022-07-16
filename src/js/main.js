@@ -1,13 +1,6 @@
-// spinner.js
-function createSpinner(parent) {
-  const spinnerAreaEl = parent.querySelector(".spinner-area");
-  const imageEl = document.createElement("img");
-  imageEl.alt = "spinner";
-  imageEl.src = "./src/image/spinner.gif";
-
-  spinnerAreaEl.append(imageEl);
-}
 // main.js
+import { createSpinner } from './spinner.js';
+
 function createTopNewsElement(article) {
   const { title, summary, link, thumbnailImage } = article;
 
